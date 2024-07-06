@@ -1,0 +1,113 @@
+#table1{
+    border:1px solid ;
+}  
+#th{
+    border:1px solid ;  
+}
+#td{
+    border:1px solid ;  
+}
+
+
+
+
+
+
+
+/*
+function genero(respuesta) {
+  
+  if (preguntaActual === 0) {
+    generoElegido = respuesta;
+    nacionalidad = nacionalidad;
+    if (respuesta === 'hombre') {
+      personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes('hombre'));
+    } else {
+      personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes('mujer'));
+    }
+  } else {
+    let caracteristica = preguntaActual === 1 ? (generoElegido === 'hombre' ? 'americano' : 'liga_española') : preguntaActual === 2 ? generoElegido === 'hombre' ? 'mundial' : 'pikito': '';
+    if (respuesta === 'si') {
+      personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes(caracteristica));
+    } else {
+      personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes(caracteristica));
+    }
+  }
+
+
+  siguientePregunta();
+}
+
+
+
+
+
+function genero(respuesta) {
+  
+  if (preguntaActual === 0) {
+    generoElegido = respuesta;
+    if (respuesta === 'hombre') {
+      personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes('hombre'));
+    } else {
+      personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes('mujer'));
+    }
+  } else {
+    let caracteristica = preguntaActual === 1 ? (generoElegido === 'hombre' ? 'americano' : 'liga_española'):'';
+    if (respuesta === 'si') {
+      personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes(caracteristica));
+    } else {
+      personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes(caracteristica));
+    }
+  }
+
+
+  siguientePregunta();
+}
+function siguientePregunta() {
+  preguntaActual++;
+  if (preguntaActual === 1 || personajesRestantes.length == 8) {
+  
+  } else {
+    let preguntaTexto = preguntaActual === 1 ? (generoElegido === 'hombre' ? '¿Es un futbolista sudamericano?' : '¿Es una futbolista que juega en la liga española?'):'';
+    document.getElementById('pregunta').innerHTML = `
+      <p>${preguntaTexto}</p>
+      <button onclick="responder('si')">Sí</button>
+      <button onclick="responder('no')">No</button>
+    `;
+  }
+}
+function nacionalidad(respuesta) {
+  
+  if (preguntaActual === 1) {
+    nacionalidad1 = respuesta;
+    if (respuesta === 'europeo'&& 'hombre') {
+      personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes('europeo'));
+      let caracteristica = preguntaActual === 2? (generoElegido === 'hombre' ? 'humorista':''):'';
+    } else {
+      personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes('americano'));
+    }
+  } else {
+    let caracteristica = preguntaActual === 2? (generoElegido === 'hombre' ?  'mundial':''):'';
+    if (respuesta === 'si') {
+      personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes(caracteristica));
+    } else {
+      personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes(caracteristica));
+    }
+  }
+
+
+  siguientePregunta2();
+}
+function siguientePregunta2() {
+  preguntaActual++;
+  if (preguntaActual === 2 || personajesRestantes.length == 1) {
+    mostrarResultado();
+  } else {
+    let preguntaTexto = preguntaActual === 2 ? (respuesta === 'europeo'&& 'hombre' ? '¿Es humorista aparte de jugador?' : '') : preguntaActual === 2 ? (respuesta === 'americano'&& 'hombre' ? '¿Es humorista aparte de jugador?' : ''):'';
+    document.getElementById('pregunta').innerHTML = `
+      <p>${preguntaTexto}</p>
+      <button onclick="responder('si')">Sí</button>
+      <button onclick="responder('no')">No</button>
+    `;
+  }
+}

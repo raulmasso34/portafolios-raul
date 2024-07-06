@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="shortcut icon" href="../../../favicon.png">
+       <link rel="stylesheet" href="estil.css">
+       <title>Exercici 8.</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   </head>
+   <body>
+       <div>
+           <h1>Exercici 8. Mètodes d'ordenació de taules i llistes. </h1>
+       </div>
+       <div id="p1" style="display: block;">
+             <form>
+               <fieldset>
+                   <input type="button" value="Quick Sort" onclick="quick();">
+                   <input type="button" value="Selection Sort" onclick="selection();">
+                   <input type="button" value="Insert Sort" onclick="insertion();">
+                   <input type="button" value="Bubble Sort" onclick="bubble();">
+                   <input type="button" value="Mix it" onclick="mix();">
+               </fieldset>
+             </form>
+       </div>
+       <div id="times">
+           <p>El temps total utilitzat per l'ordenació amb el mètode Quick Sort ha estat: 2,35 segons, amb 1276 accessos a l'array, i 679 comparacions.</p>
+           <p>El temps total utilitzat per l'ordenació amb el mètode Bubble Sort ha estat: 3,46 segons, amb 1876 accessos a l'array, i 935 comparacions.</p>
+       </div>
+       <div>
+           <table class="styled-table">
+               <thead>
+                   <tr>
+                       <th>Id</th>
+                       <th>Nom</th>
+                       <th>Foto</th>
+                       <th>Força</th>   
+                   </tr>
+               </thead>
+               <tbody id="taula"></tbody>
+           </table>
+       </div>
+       <script src="codi.js"></script>
+   </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+#myBoard {
+    width: 400px;
+    margin: 20px auto;
+}
+#controls {
+    text-align: center;
+    margin-top: 10px;
+}
+.myTable {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+.myTable th, .myTable td{
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.myTable th{
+    background-color: #f2f2f2;
+}
+
+.last-move {
+    font-weight: bold;
+    color:blueviolet;
+}

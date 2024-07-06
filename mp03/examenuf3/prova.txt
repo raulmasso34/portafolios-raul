@@ -1,0 +1,2 @@
+img/goku.jpg
+img/vegeta.jpg

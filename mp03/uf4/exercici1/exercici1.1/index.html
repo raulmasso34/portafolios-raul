@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estil.css">
+    <title>Lucha de la fuerza</title>
+</head>
+<body>
+    <center><h1 id="titulo">LUCHA DE LA FUERZA</h1></center>
+    <div id="elegir" class="personaje-container">
+        <table>
+            <tr>
+                <td class="personaje" id="freezer">
+                    <center><img src="./img/freezer.jpg" width="300px" height="420px"></center>
+                    <center><p>Nombre: Freezer <br>Especie: Demonio del frío <br>Vida: 100 <br>Ataque: 40 <br>Curación: 10 <br>Especialidad: Causa daño de perforación +10 de ataque</p></center>
+                    <button onclick="seleccionarPersonaje('freezer')" id="seleccionarf">Freezer</button>
+                    <div id="accionesfh" style="display: none; text-align: center;">
+                        <button onclick="atacarh()">Atacar</button>
+                        <button onclick="curarseh()">Curarse</button>
+                    </div>
+                    <div id="accionesfo" style="display: none; text-align: center;">
+                        <button onclick="atacaro()">Atacar</button>
+                        <button onclick="curarseo()">Curarse</button>
+                    </div>
+                </td>
+                <td class="personaje" id="gohan">
+                    <center><img src="./img/gohan.jpg" width="300px" height="420px"></center>
+                    <center><p>Nombre: Gohan <br>Especie: Híbrido de humano y saiyajin <br>Vida: 100 <br>Ataque: 20 <br>Curación: 15 <br>Especialidad: Furia +10 de ataque</p></center>
+                    <button onclick="seleccionarPersonaje('gohan')" id="seleccionargh">Gohan</button>
+                    <div id="accionesghh" style="display: none; text-align: center;">
+                        <button onclick="atacarh()">Atacar</button>
+                        <button onclick="curarseh()">Curarse</button>
+                    </div>
+                    <div id="accionesgho" style="display: none; text-align: center;">
+                        <button onclick="atacaro()">Atacar</button>
+                        <button onclick="curarseo()">Curarse</button>
+                    </div>
+                </td>
+                <td class="personaje" id="goku">
+                    <center><img src="./img/goku.jpg" width="300px" height="420px"></center>
+                    <center><p>Nombre: Goku o Kakaroto <br>Especie: Saiyajin <br>Vida: 100 <br>Ataque: 30 <br>Curación: 20 <br>Especialidad: Tiene una gran agilidad +10 de curación</p></center>
+                    <button onclick="seleccionarPersonaje('goku')" id="seleccionarg">Goku</button>
+                    <div id="accionesgh" style="display: none; text-align: center;">
+                        <button onclick="atacarh()">Atacar</button>
+                        <button onclick="curarseh()">Curarse</button>
+                    </div>
+                    <div id="accionesgo" style="display: none; text-align: center;">
+                        <button onclick="atacaro()">Atacar</button>
+                        <button onclick="curarseo()">Curarse</button>
+                    </div>
+                </td>
+                <td class="personaje" id="majinboo">
+                    <center><img src="./img/majinboo.jpg" width="300px" height="420px"></center>
+                    <center><p>Nombre: Majin Boo <br>Especie: Majin <br>Vida: 100 <br>Ataque: 25 <br>Curación: 40 <br>Especialidad: Regeneración +10 de curación</p></center>
+                    <button onclick="seleccionarPersonaje('majinboo')" id="seleccionarm">Majin Boo</button>
+                    <div id="accionesmh" style="display: none; text-align: center;">
+                        <button onclick="atacarh()">Atacar</button>
+                        <button onclick="curarseh()">Curarse</button>
+                    </div>
+                    <div id="accionesmo" style="display: none; text-align: center;">
+                        <button onclick="atacaro()">Atacar</button>
+                        <button onclick="curarseo()">Curarse</button>
+                    </div>
+                </td>
+                
+                <td class="personaje" id="piccolo">
+                    <center><img src="./img/piccolo.jpg" width="300px" height="420px"></center>
+                    <center><p>Nombre: Piccolo <br>Especie: Namekiano <br>Vida: 100 <br>Ataque: 19 <br>Curación: 30 <br>Especialidad: Aumenta su tamaño y extremidades a placer +10 de ataque</p></center>
+                    <button onclick="seleccionarPersonaje('piccolo')" id="seleccionarp">Piccolo</button>
+                    <div id="accionesph" style="display: none; text-align: center;">
+                        <button onclick="atacarh()">Atacar</button>
+                        <button onclick="curarseh()">Curarse</button>
+                    </div>
+                    <div id="accionespo" style="display: none; text-align: center;">
+                        <button onclick="atacaro()">Atacar</button>
+                        <button onclick="curarseo()">Curarse</button>
+                    </div>
+                </td>
+                <td class="personaje" id="vegeta">
+                    <center><img src="./img/vegeta.jpg" width="300px" height="420px"></center>
+                    <center><p>Nombre: Vegeta <br>Especie: Saiyajin <br>Vida: 100 <br>Ataque: 28 <br>Curación: 20 <br>Especialidad: Aumenta la fuerza tras ser atacado +15 de ataque</p></center>
+                    <button onclick="seleccionarPersonaje('vegeta')" id="seleccionarv">Vegeta</button>
+                    <div id="accionesvh" style="display: none; text-align: center;">
+                        <button onclick="atacarh()">Atacar</button>
+                        <button onclick="curarseh()">Curarse</button>
+                    </div>
+                    <div id="accionesvo" style="display: none; text-align: center;">
+                        <button onclick="atacaro()">Atacar</button>
+                        <button onclick="curarseo()">Curarse</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="pelea" style="display: none;">
+        <img id="pista" src="./img/pista.jpg">
+        
+    </div>
+    <div id="heroe" style="position: absolute; top: 18%; left: 300px; display: none;"></div>
+    <div id="oponente" style="position: absolute; top: 18%; left: 900px; display: none;"></div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

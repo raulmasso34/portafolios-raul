@@ -1,0 +1,959 @@
+/*==================================== LOGO ====================================*/
+
+#tablalogo{
+    position: absolute;
+   /*  border: solid 1px black ;*/
+    width: 70%;
+    height: 20%;
+    left: 14%;
+    top: 10%
+}
+
+#logo{
+    position: absolute;
+    height: 50%;
+    width: 7%;
+    top: 5%
+}
+
+/*================================= FOTO Y NOMBRE ==============================*/
+
+#tablanombre{
+    position: absolute;
+    /*border: solid 1px black ;*/
+    width: 70%;
+    height: 40%;
+    left: 14%;
+    top: 30%
+}
+
+#foto{
+    position: absolute;
+    height: 60%;
+    width: 15%;
+    border-radius: 50% ;
+    top: 5%;
+    left: 45%;
+}
+#nombre{
+    position: absolute;
+    top: 60%;
+    left: 32%;
+    font-size: 40px;
+
+}
+#dienador{
+    position: absolute;
+    top: 80%;
+    left: 34.2%;
+    font-size: 27px;
+}
+
+/*================================= QUIEN SOY ==================================*/
+#tablaquiensoy{
+    position: absolute;
+   /* border: solid 1px black ;*/
+    width: 70%;
+    height: 15%;
+    left: 14%;
+    top: 70%
+}
+#quiensoy{
+    position: absolute;
+    text-align: center;
+    font-size: 23px;
+    top: 5%;
+}
+/*=============================== QUE PUEDO APORTAR ============================*/
+#tablavirtudes{
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    left: 14%;
+    top: 85%;
+    border-radius: 20px;
+    background-color: rgb(27, 26, 73);
+}
+/*IDIOMAS*/
+#tdvirtudes1{
+    position: absolute;
+    width: 33%;
+    height: 97%;
+    border-radius: 20px;
+}
+#cast{
+    position: absolute;
+    top: 26%;
+    padding-left: 6%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menucast{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+    top: 20%;
+    width: 90%;
+    left: 5%;
+
+}
+
+.menucast div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#castellano{
+    animation: caste-barra 5s forwards;
+}
+@keyframes caste-barra {
+   100%{
+    width: 100%;
+   } 
+}
+
+#cata{
+    position: absolute;
+    top: 49%;
+    padding-left: 6%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.menucat{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+    top: 40%;
+    width: 90%;
+    left: 5%;
+
+}
+
+.menucat div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+#catalan{
+    animation: cata-barra 5s forwards;
+}
+@keyframes cata-barra {
+   100%{
+    width: 90%;
+   } 
+}
+
+#ingl{
+    position: absolute;
+    top: 72%;
+    padding-left: 6%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuing{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+    top: 62%;
+    width: 90%;
+    left: 5%;
+
+}
+
+.menuing div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#ingles{
+    animation: ingles-barra 5s forwards;
+}
+@keyframes ingles-barra {
+   100%{
+    width: 30%;
+   } 
+}
+/*COMPETENCIAS PERSONALES*/
+#tdvirtudes2{
+    position: absolute;
+    width: 33%;
+    height: 97%;
+    left: 33.3%;
+    border-radius: 20px;
+}
+
+#res{
+    position: absolute;
+    top: 28%;
+    padding-left: 6%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menures{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+    top: 20%;
+    width: 90%;
+    left: 5%;
+
+}
+
+.menures div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#resolutivo{
+    animation: res-barra 5s forwards;
+}
+@keyframes res-barra {
+   100%{
+    width: 70%;
+   } 
+}
+
+#pers{
+    position: absolute;
+    top: 49%;
+    padding-left: 6%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.menupers{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+    top: 40%;
+    width: 90%;
+    left: 5%;
+
+}
+
+.menupers div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+#perseverante{
+    animation: pers-barra 5s forwards;
+}
+@keyframes pers-barra {
+   100%{
+    width: 90%;
+   } 
+}
+
+#caris{
+    position: absolute;
+    top: 72%;
+    padding-left: 6%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menucaris{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+    top: 60%;
+    width: 90%;
+    left: 5%;
+
+}
+
+.menucaris div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#carismatico{
+    animation: caris-barra 5s forwards;
+}
+@keyframes caris-barra {
+   100%{
+    width: 80%;
+   } 
+}
+
+/*CONOCIMIENTOS*/
+#tdvirtudes3{
+    position: absolute;
+    width: 33%;
+    height: 97%;
+    left: 66.5%;
+    border-radius: 20px;
+}
+
+
+#html{
+    position: absolute;
+    top: 20%;
+    padding-left: 6%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menuhtml{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+    top: 14%;
+    width: 90%;
+    left: 5%;
+
+}
+
+.menuhtml div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#html5{
+    animation: html-barra 5s forwards;
+}
+@keyframes html-barra {
+   100%{
+    width: 80%;
+   } 
+}
+
+#css{
+    position: absolute;
+    top: 38%;
+    padding-left: 6%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.menucss{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+    top: 30%;
+    width: 90%;
+    left: 5%;
+
+}
+
+.menucss div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+#css4{
+    animation: css-barra 5s forwards;
+}
+@keyframes css-barra {
+   100%{
+    width: 60%;
+   } 
+}
+
+#js{
+    position: absolute;
+    top: 58%;
+    padding-left: 6%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menujs{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+    top: 47%;
+    width: 90%;
+    left: 5%;
+
+}
+
+.menujs div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#javascript{
+    animation: js-barra 5s forwards;
+}
+@keyframes js-barra {
+   100%{
+    width: 30%;
+   } 
+}
+#sql{
+    position: absolute;
+    top: 74%;
+    padding-left: 6%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menusql{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+    top: 62%;
+    width: 90%;
+    left: 5%;
+
+}
+
+.menusql div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#mysql{
+    animation: sql-barra 5s forwards;
+}
+@keyframes sql-barra {
+   100%{
+    width: 20%;
+   } 
+}
+
+/*=================================== PROYECTOS ================================*/
+#proyectos{
+    position: absolute;
+    width: 70%;
+    height: 120%;
+    top: 140%;
+    left: 14%;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 30px;
+}
+/*streetfighter*/
+
+.streetf {
+    position: absolute;
+    width: 25%;
+    height: 28%;
+    border-radius: 20%;
+    top: 15%;
+    left: 10%;
+    overflow: hidden; 
+}
+
+.street1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    overflow: hidden; 
+}
+
+.street-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20%; 
+    transition: opacity 0.3s ease; 
+}
+
+.street2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    background-image: url(./img/street2.png); 
+}
+
+
+.street1:hover .street-img {
+    opacity: 0; 
+}
+
+.street1:hover .street2 {
+    opacity: 1; 
+    background-size: cover; 
+}
+
+#boton-street{
+    border-radius: 10px;
+    border: solid 1px white;
+    color: white;
+    background-color: rgba(187, 180, 180, 0.356);
+    width: 170px;
+    height: 40px;
+}
+/*SOPA DE LETRAS*/
+.sopa{
+    position: absolute;
+    width: 25%;
+    height: 28%;
+    border-radius: 20%;
+    top: 15%;
+    left: 60%;
+    overflow: hidden; 
+}
+.sopa1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    overflow: hidden; 
+}
+
+.sopa-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20%; 
+    transition: opacity 0.3s ease; 
+}
+
+.sopal1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    background-image: url(./img/sopaletras2.png); 
+}
+
+
+.sopal:hover .sopa-img {
+    opacity: 0; 
+}
+
+.sopal:hover .sopal1 {
+    opacity: 1; 
+    background-size: cover; 
+}
+
+#boton-sopa{
+    border-radius: 10px;
+    border: solid 1px black;
+    color: black;
+    background-color: rgba(187, 180, 180, 0.356);
+    width: 170px;
+    height: 40px;
+}
+/*DRAGON BALL*/
+.dragon{
+    position: absolute;
+    width: 25%;
+    height: 28%;
+    border-radius: 20%;
+    top: 55%;
+    left: 10%;
+    overflow: hidden;
+}
+.dragonb {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    overflow: hidden; 
+}
+
+.dragon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20%; 
+    transition: opacity 0.3s ease; 
+}
+
+.dragonball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: yellow;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    background-image: url(./img/dragonball2.png); 
+}
+
+
+.dragonb:hover .dragon-img {
+    opacity: 0; 
+}
+
+.dragonb:hover .dragonball {
+    opacity: 1; 
+    background-size: cover; 
+}
+
+#boton-dragon{
+    border-radius: 10px;
+    border: solid 1px yellow;
+    color: yellow;
+    background-color: rgba(187, 180, 180, 0.356);
+    width: 170px;
+    height: 40px;
+}
+
+/*CONNECTA5*/
+.connecta{
+    position: absolute;
+    width: 25%;
+    height: 28%;
+    border-radius: 20%;
+    top: 55%;
+    left: 60%;
+    overflow: hidden;
+}
+.connecta5 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    overflow: hidden; 
+}
+
+.connect-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20%; 
+    transition: opacity 0.3s ease; 
+}
+
+.connect5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    background-image: url(./img/connect5.png); 
+
+}
+
+
+.connecta5:hover .connect-img {
+    opacity: 0; 
+}
+
+.connecta5:hover .connect5 {
+    opacity: 1; 
+    background-size: cover; 
+}
+
+#boton-connecta5{
+    border-radius: 10px;
+    border: solid 1px black;
+    color: black;
+    background-color: rgba(187, 180, 180, 0.356);
+    width: 170px;
+    height: 40px;
+}
+
+/*=================================== CONTACTOS ================================*/
+
+.contactos{
+    position: absolute;
+    border-radius: 20px;
+    width: 80%;
+    height: 50%;
+    background-color: rgb(27, 26, 73);
+    top: 250%;
+    left: 10%;
+    color: white;
+}
+#logocontacto{
+    position: absolute;
+    height: 38%;
+    width: 10%;
+    top: 5%;
+    left: 45%;
+}
+
+#github{
+    position: absolute;
+    font-size: 80px;
+    top: 281%;
+    left: 25%;
+    color: white;
+}
+#linkedin{
+    position: absolute;
+    font-size: 80px;
+    top: 281%;
+    left: 40%;
+    color: white;
+}
+#email{
+    position: absolute;
+    font-size: 80px;
+    top: 281%;
+    left: 57%;
+    color: white;
+}
+#phone{
+    position: absolute;
+    font-size: 80px;
+    top: 281%;
+    left: 74%;
+    color: white;
+}
+footer p {
+    color: white;
+    position: absolute;
+    top: 293%;
+    left: 39%
+    
+}
+
+/*=================================== RESPONSIVE ===============================*/
+
+@media (max-width: 600px) {
+   /*head*/
+    header {
+        position: absolute;
+        left: 20px;
+        top: 1%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #logo {
+        width: 80px; 
+    }
+
+   
+    #tablanombre {
+        padding: 1px ;
+    }
+
+    #foto {
+        width: 120px; 
+        top: -5%;
+        left: 43%;
+    }
+
+    #nombre {
+        font-size: 1.2em; 
+        left: 20%;
+    }
+
+    #dienador {
+        font-size: 0.9em; 
+        left: 19%;
+        top: 70%
+    }
+    /*quien soy*/
+    #quiensoy {
+        padding: 0 10px;
+        top: -40%;
+        left: 9%;
+    }
+
+    /*virtudes */
+    #tablavirtudes {
+        flex-direction: column;
+        align-items: center;
+        top: 100%;
+        width: 100%;
+        left:0%;
+    }
+
+    #tablavirtudes td {
+        flex-basis: 90%;
+        margin-bottom: 10px;
+    }
+
+    #tablavirtudes h1 {
+        font-size: 0.99em; /* Reducir tamaño de los títulos */
+    }
+
+    /*proyectos*/
+    #proyectos{
+        top: 149%;
+    }
+
+    .streetf {
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        border-radius: 20%;
+        top: 15%;
+        left: 1%;
+        overflow: hidden; 
+    }
+
+    .streetf .street2, .sopa .sopal1, .dragon .dragonball, .connecta .connect5 {
+        position: absolute;
+        bottom: 90%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el texto */
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 0.6em;
+    }
+
+    .streetf .street2 button, .sopa .sopal1 button, .dragon .dragonball button, .connecta .connect5 button {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+    
+    .sopa{
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        border-radius: 20%;
+        top: 15%;
+        left: 60%;
+        overflow: hidden; 
+    }
+
+    .dragon{
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        border-radius: 20%;
+        top: 40%;
+        left: 1%;
+        overflow: hidden;
+    }
+
+    .connecta{
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        border-radius: 20%;
+        top: 40%;
+        left: 60%;
+        overflow: hidden;
+    }
+
+    /*footer*/
+
+    .contactos{
+        width: 100%;
+        left: 0%;
+        top:220%;
+    }
+    #logocontacto {
+        width: 80px;
+        height: 110px; 
+    }
+
+
+    #github{
+        position: absolute;
+        font-size: 50px;
+        top: 242%;
+        left: 12%;
+        color: white;
+    }
+    #linkedin{
+        position: absolute;
+        font-size: 50px;
+        top: 242%;
+        left: 35%;
+        color: white;
+    }
+    #email{
+        position: absolute;
+        font-size: 50px;
+        top: 242%;
+        left: 57%;
+        color: white;
+    }
+    #phone{
+        position: absolute;
+        font-size: 50px;
+        top: 242%;
+        left: 80%;
+        color: white;
+    }
+    footer p {
+        color: white;
+        position: absolute;
+        top: 252%;
+        left: 15%
+        
+    }
+}
+

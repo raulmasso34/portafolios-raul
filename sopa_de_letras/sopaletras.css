@@ -1,0 +1,174 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fce3d2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#left-content {
+  text-align: left;
+  margin-right: 20px; /* Añade margen a la derecha para separar del resto del contenido */
+}
+
+#contador {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cuadropuntuacion {
+  background-color: #f0b77e;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 10px 10px 0;
+}
+
+#puntuacion, #puntuacionm, #puntuaciond {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+#nivel-dificultad {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  margin-bottom: 5px;
+}
+
+#sopaContainer {
+  text-align: center;
+}
+
+#sopaDeLetras {
+  width: 80%;
+  margin: 20px auto; /* Centra horizontalmente la tabla */
+  border-collapse: collapse;
+  display: inline-block;
+}
+
+#sopaDeLetras td {
+  width: 50px;
+  height: 30px;
+  border: 2px solid #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #9fd8cb;
+  padding: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+#sopaDeLetras td.found {
+  background-color: lightgreen;
+}
+
+#sopaDeLetras td.found del {
+  text-decoration: line-through;
+}
+
+#sidebar {
+  text-align: left;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#words {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#wordList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#wordList li {
+  font-size: 16px;
+  margin: 5px 0;
+  margin-right: 5px;
+}
+
+#words2 {
+  border: 1px solid black;
+}
+
+
+
+  /* Media Queries para dispositivos más pequeños */
+@media only screen and (max-width: 600px) {
+  #container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #left-content {
+    margin-right: 0; /* Elimina el margen a la derecha en pantallas más pequeñas */
+  }
+
+  #nivel-dificultad {
+    order: 3;
+    margin-top: 10px;
+    text-align: center; /* Centra el texto de niveles de dificultad */
+  }
+
+  input[type="radio"] {
+    margin-bottom: 5px;
+    margin-right: 5px; /* Añade espacio entre los radio buttons */
+  }
+
+  #words {
+    order: 4;
+  }
+
+  #sopaDeLetras {
+    width: 100%;
+    margin: 10px 0; /* Ajusta el margen para una mejor apariencia en pantallas pequeñas */
+  }
+
+  #contador {
+    text-align: center;
+    margin-top:300px; /* Centra el contador */
+    order: 2;
+  }
+
+  .cuadropuntuacion {
+    margin: 10px 0; /* Ajusta el margen del cuadro de puntuación */
+  }
+
+  #puntuacion, #puntuacionm, #puntuaciond {
+    margin: 5px 0;
+  }
+}

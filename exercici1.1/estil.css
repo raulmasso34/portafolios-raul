@@ -1,0 +1,63 @@
+#freezer{
+    left:210px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    height: auto;
+    width: auto;
+    position: absolute;
+}
+#gohan{
+    left:800px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    height: auto;
+    width: auto;
+    position: absolute;
+}
+#goku{
+    left:1245px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    height: auto;
+    width: auto;
+    position: absolute;
+}
+#majinboo{
+    left:250px;
+    bottom: -500px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    height: auto;
+    width: auto;
+    position: absolute;
+}
+#piccolo{
+    left:650px;
+    bottom: -500px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    height: auto;
+    width: auto;
+    position: absolute;
+}
+#vegeta{
+    left:1280px;
+    bottom: -500px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    height: auto;
+    width: auto;
+    position: absolute;
+}
+#pelea, #acciones { display: none; }
+
+
+.personaje {
+    text-align: center;
+}
+#pista {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

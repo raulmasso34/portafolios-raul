@@ -1,0 +1,101 @@
+<html>
+<head>
+  <title>Akinator</title>
+</head>
+<body>
+  <h1>Akinator</h1>
+  <div id="intro"><p >Elige uno de estos de estos 6 personajes famosos</p></div>
+<div id="tabla" style ="display:block;">
+  <table id="table1">
+    <tr id="tr">
+      <td id="td"><img src="messi.jpg" width="300px" height="300px"><p><center>Leo Messi</center></p></td>
+      <td id="td"><img src="cr7.jpg" width="300px" height="300px"><p><center>Cristiano Ronaldo</center></p></td>
+      <td id="td"><img src="neymar.jpg" width="300px" height="300px"><p><center>Neymar</center></p></td>
+      <td id="td"><img src="joaquin.jpg" width="300px" height="300px"><p><center>Joaquin</center></p></td>
+    </tr>
+    <tr id="tr">
+      <td id="td"><img src="alexia.jpg" width="300px" height="300px"><p><center>Alexia Putellas</center></p></td>
+      <td id="td"><img src="cascarino.jpg" width="300px" height="300px"><p><center>Cascarino</center></p></td>
+      <td id="td"><img src="hermoso.jpg" width="300px" height="300px"><p><center>Jennifer Hermoso</center></p></td>
+      <td id="td"><img src="aitana.jpeg" width="300px" height="300px"><p><center>Aitana Bonmati</center></p></td>
+    </tr>
+  </table>
+</div>
+<button onclick="empezar('empezar')" id="empezar">Empezar</button>
+  <div id="pregunta" style ="display:none;">
+
+    
+    <p>¿Es un hombre o una mujer?</p>
+    <button onclick="responder('hombre')">Hombre</button>
+    <button onclick="responder('mujer')">Mujer</button>
+  </div>
+  <div class="personaje-info">
+    <p id="personaje-nombre"></p>
+    <img id="imagenes" width="400px" height="400px" style ="display:none;">
+  </div>
+
+  <p id="resultado" style="display: none;"></p>
+  <button id="volver" onclick="volverAlInicio()" style="display: none;">Volver al inicio</button>
+  <link href="akinator.css" type="text/css" rel="stylesheet">
+  <script src= "akinator.js"></script>
+</body>
+</html>
+
+<!--
+
+ }else if (preguntaActual === 1) {
+      let genero = personajesRestantes[0].caracteristicas.includes("hombre") ? "hombre" : "mujer";
+      if (respuesta === "hombre") {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("europeo") && !personaje.caracteristicas.includes("americano")&&!personaje.caracteristicas.includes("mundial") && !personaje.caracteristicas.includes("humorista"));
+      } else if (respuesta === "mujer") {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("liga_francesa") && !personaje.caracteristicas.includes("liga_española")&&!personaje.caracteristicas.includes("mundial") && !personaje.caracteristicas.includes("mejor_mundial"));
+      } else {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("pikito") && !personaje.caracteristicas.includes("regateador"));
+      }
+      document.getElementById('europeo').style.display = 'block';
+      document.getElementById('americano').style.display = 'block';
+    } else if ( respuesta == 'hombre' && nacionalidad == 'americano' && preguntaActual === 2) {
+      if (respuesta === "si") {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("americano")&&!personaje.caracteristicas.includes("mundial"));
+      } else {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("europeo")&&!personaje.caracteristicas.includes("humorista"));
+      }
+      document.getElementById('europeo').style.display = 'none';
+      document.getElementById('americano').style.display = 'none';
+
+    } else if (respuesta == 'hombre' && nacionalidad == 'americano' && preguntaActual === 3) {
+      if (respuesta === "si") {
+        personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes("mundial"));
+      } else {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("regateador"));
+      }
+    }else if (respuesta == 'hombre' && nacionalidad == 'europeo' && preguntaActual === 3) {
+        if (respuesta === "si") {
+          personajesRestantes = personajesRestantes.filter(personaje => personaje.caracteristicas.includes("humorista"));
+        } else {
+          personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("maximo_goleador"));
+        }
+    } else if ( respuesta == 'mujer' && preguntaActual === 2) {
+      if (respuesta === "si") {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("liga_española")&&!personaje.caracteristicas.includes("mundial")&&!personaje.caracteristicas.includes("mejor_mundial")&&!personaje.caracteristicas.includes("pikito")&&!personaje.caracteristicas.includes("balon_de_oro"));
+      } else {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("liga_francesa"));
+      }
+    } else if (respuesta == 'mujer' && preguntaActual === 3) {
+      if (respuesta === "si") {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("mundial")&&!personaje.caracteristicas.includes("mejor_mundial")&&!personaje.caracteristicas.includes("balon_de_oro"));
+      } else {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("pikito"));
+      }
+    }else if (respuesta == 'mujer' && preguntaActual === 3) {
+      if (respuesta === "si") {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("mejor_mundial"));
+      } else {
+        personajesRestantes = personajesRestantes.filter(personaje => !personaje.caracteristicas.includes("balon_de_oro"));
+      }
+    }
+      <button onclick="nacionalidad('europeo')"style="display: none;" >Europeo</button>
+    <button onclick="nacionalidad('americano')"style="display: none;">Americano</button>
+    <button onclick="nacionalidad('liga_española')"style="display: none;" >liga_española</button>
+    <button onclick="nacionalidad('liga_francesa')"style="display: none;">liga_francesa</button>
+  -->

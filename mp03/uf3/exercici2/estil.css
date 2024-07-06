@@ -1,0 +1,116 @@
+/* Estilos para el cuerpo */
+body {
+    font-family: 'Comic Sans MS', cursive; /* Tipo de fuente estilo cómic */
+    background-color: #FF4500; /* Fondo naranja */
+    color: #FFFFFF; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el título */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #FFD700; /* Bordes amarillo dorado */
+}
+
+th, td {
+    padding: 10px;
+}
+
+/* Estilos para las celdas de la tabla */
+td {
+    text-align: center;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #FFFFFF; /* Enlaces blancos */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos para la pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Estilos para la sección de imágenes */
+.image-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para las imágenes */
+.image-container {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    border: 5px solid #FFD700; /* Borde amarillo dorado */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Estilos para la zona de carga */
+.drop-zone {
+    width: 100%;
+    height: 200px;
+    border: 4px dashed #FFD700; /* Borde de rayos amarillo dorado */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+/* Estilos cuando se está arrastrando sobre la zona de carga */
+.drop-zone.dragging {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.uploaded-image-container {
+    margin: 10px;
+    position: relative;
+}
+
+.uploaded-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}

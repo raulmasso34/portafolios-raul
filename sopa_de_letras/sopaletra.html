@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="sopaletras.css" type="text/css" rel="stylesheet">
+  <script src="sopaletra.js">hola</script>
+</head>
+<body>
+<h1 ></h1>
+  <div id="container">
+    <!-- Contenido a la izquierda de la tabla -->
+    <div id="left-content">
+      <!-- Contador -->
+      <h1 id="contador">0:00</h1>
+      
+      <!-- Puntuación -->
+      <div class="cuadropuntuacion">
+        <p id="puntuacion">Mejor tiempo(nivel facil): --:--</p>
+        <p id="puntuacionm">Mejor tiempo(nivel medio): --:--</p>
+        <p id="puntuaciond">Mejor tiempo(nivel dificil): --:--</p>
+      </div>
+    </div>
+   
+
+    
+    <!-- Niveles de dificultad encima de la sopa de letras -->
+    <div id="nivel-dificultad">
+      <input type="radio" id="facil" name="nivel" checked onclick="cambiarNivel('facil');" >
+      <label for="facil">Facil</label><br>
+      <input type="radio" id="medio" name="nivel" value="false" onclick="cambiarNivel('medio');">
+      <label for="medio">Medio</label><br>
+      <input type="radio" id="dificil" name="nivel" value="false" onclick="cambiarNivel('dificil');">
+      <label for="dificil">Dificil</label> 
+    </div>
+
+  
+    <div id="sopaContainer">
+      <table id="sopaDeLetras"></table>
+    </div>
+  
+    <div id="sidebar">
+      <!-- Botón para encontrar palabra -->
+      <button onclick="encontrarPalabra()">Encontrar palabra</button>
+      
+      <!-- Lista de palabras a encontrar -->
+      <div id="words">
+        <table >
+          <td id="words2">
+        <p>Palabras a encontrar:</p>
+        <ul id="wordList"></ul>
+        </td>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+

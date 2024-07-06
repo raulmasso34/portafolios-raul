@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento -->
+<html lang="ca"> <!-- Inicio del documento HTML con el atributo lang establecido a "ca" (catalán) -->
+
+<head> <!-- Encabezado del documento -->
+    <meta charset="UTF-8"> <!-- Especificación de la codificación de caracteres -->
+    <title>Pràctica d'Escacs</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="chessboard-1.0.0.min.css"> <!-- Enlace al archivo CSS para el tablero de ajedrez -->
+    <script src="jquery-3.7.1.min.js"></script> <!-- Enlace al archivo JavaScript de la biblioteca jQuery -->
+    <script src="chess.min.js"></script> <!-- Enlace al archivo JavaScript de la biblioteca chess.js -->
+    <script src="chessboard-1.0.0.min.js"></script> <!-- Enlace al archivo JavaScript de la biblioteca chessboard.js -->
+    <link rel="stylesheet" href="estil.css"> <!-- Enlace al archivo CSS adicional para estilos personalizados -->
+</head>
+
+<body> <!-- Cuerpo del documento -->
+
+    <div id="myBoard"></div> <!-- Contenedor del tablero de ajedrez -->
+
+    <div id="controls"> <!-- Contenedor para los controles del juego -->
+        <button id="moveBack">&lt;&lt;</button> <!-- Botón para retroceder en el historial de movimientos -->
+        <input type="text" id="moveInput" placeholder="e2-e4" /> <!-- Campo de entrada para ingresar movimientos -->
+        <button id="moveBtn">Fer Moviment</button> <!-- Botón para confirmar un movimiento ingresado -->
+        <button id="moveForward">&gt;&gt;</button> <!-- Botón para avanzar en el historial de movimientos -->
+        <table border="1" class="myTable"> <!-- Tabla para mostrar el historial de movimientos -->
+            <thead> <!-- Encabezado de la tabla -->
+                <tr> <!-- Fila del encabezado -->
+                    <th>Número</th> <!-- Celda del encabezado para el número de movimiento -->
+                    <th>Moviment</th> <!-- Celda del encabezado para el movimiento realizado -->
+                </tr>
+            </thead>
+            <tbody id="movements"> <!-- Cuerpo de la tabla para mostrar los movimientos -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Se asegura de que los caminos a los archivos JavaScript son correctos -->
+    <script type="module" src="index.js"></script> <!-- Enlace al archivo JavaScript principal utilizando módulos ES6 -->
+
+</body>
+</html>

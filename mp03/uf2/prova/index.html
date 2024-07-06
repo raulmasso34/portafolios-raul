@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/chessboard-1.0.0.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/chessboard-1.0.0.min.js"></script>
+    <script src="./js/chess.min.js"></script>
+  <title>examen</title>
+
+</head>
+<body>
+<div>
+    <h1>Chess Game</h1>
+    <div>
+        <div id="board" style="width: 300px;"></div>
+     
+        <form>
+            
+            <input type="radio" id="a" name="letras" value="a">
+             <label for="a">a</label>
+             <input type="radio" id="b" name="letras" value="b">
+             <label for="b">b</label>
+             <input type="radio" id="c" name="letras" value="c">
+             <label for="c">c</label>
+             <input type="radio" id="d" name="letras" value="d">
+             <label for="d">d</label>
+            
+             <input type="radio" id="e" name="letras" value="e">
+             <label for="e">e</label>
+            
+             <input type="radio" id="f" name="letras" value="f">
+             <label for="f">f</label>
+            
+             <input type="radio" id="g" name="letras" value="g">
+             <label for="g">g</label>
+            
+             <input type="radio" id="h" name="letras" value="h">
+             <label for="h">h</label>
+            
+            
+              <br>  
+            
+              
+              <input type="radio" id="numero1" name="numeros" value="numero1">
+              <label for="numeros1">1</label>
+              <input type="radio" id="numero2" name="numeros" value="numero2">
+              <label for="numeros2">2</label> 
+              <input type="radio" id="numero3" name="numeros" value="numero3">
+              <label for="numero3">3</label>
+              <input type="radio" id="numero4" name="numeros" value="numero4">
+              <label for="numero4">4</label>
+              <input type="radio" id="numero5" name="numeros" value="numero5">
+              <label for="numero5">5</label>
+              <input type="radio" id="numero6" name="numeros" value="numero6">
+              <label for="numero6">6</label>
+              <input type="radio" id="numero7" name="numeros" value="numero7">
+              <label for="numero7">7</label>
+              <input type="radio" id="numero8" name="numeros" value="numero8">
+              <label for="numero8">8</label>
+  <br><br>
+              <input type="button" value="Submit" id="submit">
+
+
+
+</div>
+
+
+  <script type="module" src="gameLogic.js"></script>
+</body>
+</html> 
+
+
+
+ <!--
+      <div>
+            <button id="a1">a1</button>
+            <button id="a2">a2</button>
+            <button id="a3">a3</button>
+            <button id="a4">a4</button>
+            <button id="a5">a5</button>
+            <button id="a6">a6</button>
+            <button id="a7">a7</button>
+            <button id="a8">a8</button>
+<br>
+            <button id="b1">b1</button>
+            <button id="b2">b2</button>
+            <button id="b3">b3</button>
+            <button id="b4">b4</button>
+            <button id="b5">b5</button>
+            <button id="b6">b6</button>
+            <button id="b7">b7</button>
+            <button id="b8">b8</button>
+<br>
+            <button id="c1">c1</button>
+            <button id="c2">c2</button>
+            <button id="c3">c3</button>
+            <button id="c4">c4</button>
+            <button id="c5">c5</button>
+            <button id="c6">c6</button>
+            <button id="c7">c7</button>
+            <button id="c8">c8</button>
+<br>
+            <button id="d1">d1</button>
+            <button id="d2">d2</button>
+            <button id="d3">d3</button>
+            <button id="d4">d4</button>
+            <button id="d5">d5</button>
+            <button id="d6">d6</button>
+            <button id="d7">d7</button>
+            <button id="d8">d8</button>
+          <br>  
+            <button id="e1">e1</button>
+            <button id="e2">e2</button>
+            <button id="e3">e3</button>
+            <button id="e4">e4</button>
+            <button id="e5">e5</button>
+            <button id="e6">e6</button>
+            <button id="e7">e7</button>
+            <button id="e8">e8</button>
+         <br>   
+            <button id="f1">f1</button>
+            <button id="f2">f2</button>
+            <button id="f3">f3</button>
+            <button id="f4">f4</button>
+            <button id="f5">f5</button>
+            <button id="f6">f6</button>
+            <button id="f7">f7</button>
+            <button id="f8">f8</button>
+<br>
+            <button id="g1">g1</button>
+            <button id="g2">g2</button>
+            <button id="g3">g3</button>
+            <button id="g4">g4</button>
+            <button id="g5">g5</button>
+            <button id="g6">g6</button>
+            <button id="g7">g7</button>
+            <button id="g8">g8</button>
+<br>
+            <button id="h1">h1</button>
+            <button id="h2">h2</button>
+            <button id="h3">h3</button>
+            <button id="h4">h4</button>
+            <button id="h5">h5</button>
+            <button id="h6">h6</button>
+            <button id="h7">h7</button>
+            <button id="h8">h8</button>
+        </div>
+ -->
+ <!-- <form>
+            
+          <input type="radio" id="a" name="letras" value="a">
+           <label for="a">a</label>
+           <input type="radio" id="b" name="letras" value="b">
+           <label for="b">b</label>
+           <input type="radio" id="c" name="letras" value="c">
+           <label for="c">c</label>
+           <input type="radio" id="c" name="letras" value="c">
+           <label for="c">d</label>
+          
+           <input type="radio" id="e" name="letras" value="e">
+           <label for="e">e</label>
+          
+           <input type="radio" id="f" name="letras" value="f">
+           <label for="f">f</label>
+          
+           <input type="radio" id="g" name="letras" value="g">
+           <label for="g">g</label>
+          
+           <input type="radio" id="h" name="letras" value="h">
+           <label for="h">h</label>
+          
+          
+            <br>  
+          
+            
+            <input type="radio" id="numero1" name="numeros" value="1">
+            <label for="numeros1">1</label>
+            <input type="radio" id="numero2" name="numeros" value="2">
+            <label for="numeros2">2</label> 
+            <input type="radio" id="numero3" name="numeros" value="3">
+            <label for="numero3">3</label>
+            <input type="radio" id="numero4" name="numeros" value="4">
+            <label for="numero3">4</label>
+            <input type="radio" id="numero5" name="numeros" value="5">
+            <label for="numero3">5</label>
+            <input type="radio" id="numero6" name="numeros" value="6">
+            <label for="numero3">6</label>
+            <input type="radio" id="numero7" name="numeros" value="7">
+            <label for="numero3">7</label>
+            <input type="radio" id="numero8" name="numeros" value="8">
+            <label for="numero3">8</label>
+<br><br>
+            <input type="submit" value="Submit" id="submit">
+            
+          </form>-->

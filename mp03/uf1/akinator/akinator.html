@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Akinator</title>
+</head>
+<body>
+  <h1>Akinator</h1>
+  <div id="intro"><p >Elige uno de estos de estos 6 personajes famosos</p></div>
+<div id="tabla" style ="display:block;">
+  <table id="table1">
+    <tr id="tr">
+      <td id="td"><img src="messi.jpg" width="300px" height="300px"><p><center>Leo Messi</center></p></td>
+      <td id="td"><img src="cr7.jpg" width="300px" height="300px"><p><center>Cristiano Ronaldo</center></p></td>
+      <td id="td"><img src="neymar.jpg" width="300px" height="300px"><p><center>Neymar</center></p></td>
+      <td id="td"><img src="james.jpeg" width="300px" height="300px"><p><center>James rodriguez</center></p></td>
+    </tr>
+    <tr id="tr">
+      <td id="td"><img src="alexia.jpg" width="300px" height="300px"><p><center>Alexia Putellas</center></p></td>
+      <td id="td"><img src="cascarino.jpg" width="300px" height="300px"><p><center>Cascarino</center></p></td>
+      <td id="td"><img src="hermoso.jpg" width="300px" height="300px"><p><center>Jennifer Hermoso</center></p></td>
+      <td id="td"><img src="aitana.jpeg" width="300px" height="300px"><p><center>Aitana Bonmati</center></p></td>
+    </tr>
+  </table>
+</div>
+<button onclick="empezar('empezar')" id="empezar">Empezar</button>
+  <div id="pregunta" style ="display:none;">
+
+    
+    <p id="genero">¿Es un hombre o una mujer?</p>
+    <button onclick="responder('hombre')">Hombre</button>
+    <button onclick="responder('mujer')">Mujer</button>
+  </div>
+  <div class="personaje-info">
+    <p id="personaje-nombre"></p>
+    <img id="imagenes" width="400px" height="400px" style ="display:none;">
+  </div>
+
+  <p id="resultado" style="display: none;"></p>
+  <button id="volver" onclick="volverAlInicio()" style="display: none;">Volver al inicio</button>
+  <link href="akinator.css" type="text/css" rel="stylesheet">
+  <script src= "akinator.js"></script>
+</body>
+</html>
+

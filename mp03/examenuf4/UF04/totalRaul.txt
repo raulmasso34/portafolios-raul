@@ -1,0 +1,268 @@
+class Alumne{
+    constructor(nom,edat,grau){
+this.#nom
+this.edat = edat;
+this.grau = grau;
+
+    }
+#nom
+    getNom(){
+        return this.#nom;
+    }
+    setNom(nomAlumne){
+        nom=nomAlumne;
+            }
+    getEdat(){
+        return this.edat;
+    }
+    setEdat(edatAlumne){
+        edat=edatAlumne;
+            }
+   getGrau(){
+        return this.grau;
+    }
+    setGrau(grauAlumne){
+        grau=grauAlumne;
+            }
+
+    static registros(arrayAlumnes){
+        return arrayAlumnes.length;
+        }
+}
+
+class SMX extends Alumne {
+    constructor(nom,edat,grau){
+        super(nom,edat,grau)
+    }
+    
+    getNom(){
+        return this.nom;
+    }
+  
+    getEdat(){
+        return this.edat;
+    }
+    getgrau(){
+        return this.grau;
+    }
+}
+class DAW extends Alumne {
+    constructor(nom,edat,grau){
+        super(nom,edat,grau)
+    }
+    getNom(){
+        return this.nom;
+    }
+    getEdat(){
+        return this.edat;
+    }
+    getgrau(){
+        return this.grau;
+    }
+}
+class DAM extends Alumne {
+    constructor(nom,edat,grau){
+        super(nom,edat,grau)
+    }
+    getNom(){
+        return this.nom;
+    }
+    getEdat(){
+        return this.edat;
+    }
+    getgrau(){
+        return this.grau;
+    }
+}
+
+class Profesor {
+    constructor(nom,cognom,grau){
+        this.#nom
+        this.cognom = cognom;
+        this.grau = grau;
+
+    }
+    #nom;
+ getNom(){
+    return this.#nom;
+ }
+ getCognom(){
+    return this.cognom;
+ }
+ 
+getGrau(){
+    return this.grau;
+}
+Ensenya(SMX, DAW, DAM) {
+    if (SMX.length > 0) {
+        console.log(`Esta enseñando a los alumnos de SMX`);
+    } else {
+        console.log(`No enseña a los alumnos de SMX`);
+    }
+    if (DAW.length > 0) {
+        console.log(`Esta enseñando a los alumnos de DAW`);
+    } else {
+        console.log(`No esta enseñando a los alumnos de DAW`);
+    }
+    if (DAM.length > 0) {
+        console.log(`Esta enseñando a los alumnos de DAM`);
+    } else {
+        console.log(`No enseña a los alumnos de DAM`);
+    }
+}
+
+
+}let alumnes = [];
+let profesors = [];
+
+
+function Alumnes() {
+    
+    let nom = document.getElementById("nomalumne").value;
+    let edat = document.getElementById("edatalumne").value;
+    let grau = document.getElementById("graualumne").value;
+
+    if(grau == "SMX" || grau == "DAW" || grau == "DAM" || grau == "smx" || grau == "daw" || grau == "dam"|| grau == "Smx" || grau == "Daw" || grau == "Dam"){
+        alert("enviat");
+        if (grau == "SMX" || grau == "Smx"|| grau == "smx"){
+            let Smx = new SMX(nom,edat,grau);
+            alumnes.push(Smx);
+            console.log("Nom:", nom);
+            console.log("Edat:", edat);
+            console.log("Grau:", grau);
+            console.log("array alumnes de SMX", alumnes)
+            
+           }
+           else if (grau == "DAW" || grau == "Daw"|| grau == "daw"){
+            let Daw = new DAW(nom,edat,grau);
+            alumnes.push(Daw);
+            console.log("Nom:", nom);
+            console.log("Edat:", edat);
+            console.log("Grau:", grau);
+            console.log("array alumnes de DAW", alumnes)
+           }
+           else if (grau == "DAM" || grau == "Dam"|| grau == "dam"){
+            let Dam = new DAM(nom,edat,grau);
+            alumnes.push(Dam);
+            console.log("Nom:", nom);
+            console.log("Edat:", edat);
+            console.log("Grau:", grau);
+            console.log("array alumnes de DAM", alumnes)
+           }
+        
+        
+    }else{
+            alert("dades errades")
+        }
+    
+        console.log("Cuantos alumnes", Alumne.registros(alumnes))
+    }
+   
+
+function Profesors() {
+    
+    let nom = document.getElementById("nomprofesor").value;
+    let cognom = document.getElementById("cognomprofesor").value;
+    let grau = document.getElementById("grauprofesor").value;
+
+    if(grau == "SMX" || grau == "DAW" || grau == "DAM" || grau == "smx" || grau == "daw" || grau == "dam"|| grau == "Smx" || grau == "Daw" || grau == "Dam"){
+        alert("enviat");
+        if (grau == "SMX" || grau == "Smx"|| grau == "smx"){
+           let profesorsmx = new Profesor(nom,cognom,grau)
+            profesors.push(profesorsmx);
+            console.log("Nom:", nom);
+            console.log("cognom:", cognom);
+            console.log("Grau:", grau);
+            console.log("array profesor de SMX", profesors)
+            
+           }
+           else if (grau == "DAW" || grau == "Daw"|| grau == "daw"){
+            let profesordaw = new Profesor(nom,cognom,grau)
+            profesors.push(profesordaw);
+            console.log("Nom:", nom);
+            console.log("cognom:", cognom);
+            console.log("Grau:", grau);
+            console.log("array profesor de DAW", profesors)
+           }
+           else if (grau == "DAM" || grau == "Dam"|| grau == "dam"){
+            let profesordaw = new Profesor(nom,cognom,grau)
+            profesors.push(profesordaw);
+            console.log("Nom:", nom);
+            console.log("cognom:", cognom);
+            console.log("Grau:", grau);
+            console.log("array profesor deDAM", profesors)
+           }
+        
+        
+    }else{
+            alert("dades errades")
+        }
+        
+}
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Registre de Alumnes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container, form {
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: calc(100% - 22px);
+        }
+        #searchResults {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Registre de Alumnes</h1>
+    <section>
+        <h2>Registrar Alumnes</h2>
+        <form id="alumnes">
+            Nom: <input type="text" id="nomalumne">
+            Edat: <input type="number" id="edatalumne">
+            Grau: <input type="text" id="graualumne">
+            <button type="button" onclick="Alumnes()">Afegeix Alumne</button>
+        </form>
+    </section>
+    <section>
+        <h2>Registrar Profesor</h2>
+        <form id="caretakerForm">
+            Nom: <input type="text" id="nomprofesor"/>
+            Cognom: <input type="text" id="cognomprofesor">
+            Grau: <input type="text" id="grauprofesor">
+            <button type="button" onclick="Profesors()">Afegeix Profesor</button>
+        </form>
+    </section>
+    
+</div>
+
+<div id="infoalumnes"></div>
+<script src="class.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
